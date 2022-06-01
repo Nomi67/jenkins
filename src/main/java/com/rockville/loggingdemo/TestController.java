@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- *
  * @author Nouman Ahmed
  */
 @RestController
@@ -22,5 +21,11 @@ public class TestController {
     public String helloWorld(@RequestParam("query") String query) {
         log.info("Request received : {}", query);
         return "Hello World";
+    }
+
+    @GetMapping("/test2")
+    public String testApi(@RequestParam("query") String query) {
+        log.info("Request iin test API : {}", query);
+        return "Success";
     }
 }
