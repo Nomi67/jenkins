@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'ls'
                 echo 'building the application.'
+                sh 'mvn -version'
             }
         }
          stage("test"){
