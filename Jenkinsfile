@@ -6,6 +6,9 @@ pipeline {
                 sh 'ls'
                 echo 'building the application.'
                 sh 'mvn -version'
+                sh 'mvn clean install'
+                echo 'After building the directory contains'
+                sh 'ls'
             }
         }
          stage("test"){
