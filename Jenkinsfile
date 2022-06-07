@@ -18,8 +18,8 @@ pipeline {
         }
         stage("deploy"){
             steps {
-                echo 'deploying the application.'
-                sh 'sudo java -jar ./target/logging-demo-0.0.1-SNAPSHOT.jar'
+                echo 'deploying the application.' 
+                sh 'sudo java -jar ./target/logging-demo-0.0.1-SNAPSHOT.jar &'
             }
         } 
     }
