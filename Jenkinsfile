@@ -3,6 +3,7 @@ pipeline {
     stages{
         stage("build"){
             steps {
+                sh 'ls'
                 echo 'building the application.'
             }
         }
