@@ -8,7 +8,7 @@ pipeline {
                 sh 'mvn -version'
                 sh 'mvn clean install'
                 echo 'After building the directory contains'
-                sh 'ls'
+                sh 'ls ./target'
             }
         }
          stage("test"){
