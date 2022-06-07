@@ -19,7 +19,7 @@ pipeline {
         stage("deploy"){
             steps {
                 echo 'deploying the application.'
-                sh 'java -jar ./target/logging-demo-0.0.1-SNAPSHOT.jar &'
+                sh 'java -jar ./target/logging-demo-0.0.1-SNAPSHOT.jar'
             }
         } 
     }
